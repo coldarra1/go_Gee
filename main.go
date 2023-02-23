@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"go_Gee/gee"
-
+	"log"
 	"net/http"
 )
 
@@ -21,5 +21,5 @@ func main() {
 		}
 	})
 
-	r.Run(":8080")
+	log.Fatal(r.Run(":8080"))
 }
